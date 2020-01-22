@@ -85,7 +85,8 @@ audio,
 video {
   margin: 0;
   padding: 0;
-  border: 0;
+  border: 1px solid grey;
+  max-width: 100%;
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
@@ -132,10 +133,56 @@ table {
 }
 html,
 body {
+  display: flex;
+  justify-content: center;
   height: 100%;
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  border: 3px solid grey;
-  max-width: 100%;
+  font-size: 62.5%;
+}
+html .body-wrapper,
+body .body-wrapper {
+  max-width: 90%;
+}
+html nav,
+body nav {
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1%;
+}
+html nav a,
+body nav a {
+  text-decoration: none;
+}
+html h1,
+body h1 {
+  font-size: 6.4rem;
+}
+html h2,
+body h2 {
+  font-size: 4.2rem;
+}
+html h3,
+body h3 {
+  font-size: 3rem;
+}
+html h4,
+body h4 {
+  font-size: 2rem;
+}
+html p,
+body p {
+  font-size: 1.6rem;
+}
+html ul,
+body ul {
+  font-size: 1.6rem;
+}
+html .grid-container,
+body .grid-container {
+  font-size: 1.6rem;
+  display: grid;
+  grid-template-columns: 100px 100px 100px 100px;
+  grid-gap: 10px;
 }

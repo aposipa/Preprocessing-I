@@ -19,7 +19,8 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 0;
+	border: 1px solid grey;
+	max-width: 100%;
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -31,6 +32,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	
 }
 ol, ul {
 	list-style: none;
@@ -54,12 +56,55 @@ table {
 }
 
 html, body {
-	height: 100%;
-	//font-size:62.5%;//
-	box-sizing: border-box;
-	padding: 0;
-	margin: 0;
-	border: 3px solid grey;
-	max-width:100%;
+display: flex;
+justify-content: center;
+@main-bg-color:lightgrey;
+@default-fontsize:1.6rem;
+height: 100%;
+font-size:62.5%;
+
+.body-wrapper{
+	max-width: 90%;
+}
+nav{
+	font-size: @default-fontsize;
+	display:flex;
+	justify-content: center;
+	justify-content: space-around;
+	align-items: center;
+	padding:1%;
+	
+a{
+	text-decoration: none;
+}//closes a (links)
+}//closes nav 
+h1{
+	font-size: 6.4rem;
+}
+h2{
+	font-size: 4.2rem;
+}
+h3{
+	font-size: 3rem;
+}
+h4{
+	font-size: 2rem;
+}
+p{
+	font-size:  @default-fontsize;
+}
+ul{
+	font-size:  @default-fontsize;
+}//closes font sizes.
+
+
+
+.grid-container{
+	font-size: 1.6rem;
+	display: grid;
+	grid-template-columns: 100px 100px 100px 100px;
+	grid-gap: 10px;
+	
+}//closes grid-container	
 }
 
