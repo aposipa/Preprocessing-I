@@ -56,8 +56,26 @@ table {
 }
 
 html, body {
+
+//mix-ins	
+.center(){
 display: flex;
 justify-content: center;
+}
+.column(){
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+.button-design(){
+background-color: darkgrey;
+color: white;
+border-radius: 10px;
+width: 200px;
+padding: 2% 0 2% 0;
+
+}//close mix-ins
+.center();
 @main-bg-color:lightgrey;
 @default-fontsize:1.6rem;
 height: 100%;
@@ -68,8 +86,7 @@ font-size:62.5%;
 }
 nav{
 	font-size: @default-fontsize;
-	display:flex;
-	justify-content: center;
+	.center();
 	justify-content: space-around;
 	align-items: center;
 	padding:1%;
@@ -80,6 +97,8 @@ a{
 }//closes nav 
 h1{
 	font-size: 6.4rem;
+	text-align: center;
+	
 }
 h2{
 	font-size: 4.2rem;
@@ -97,7 +116,45 @@ ul{
 	font-size:  @default-fontsize;
 }//closes font sizes.
 
+.top-container{
+	.center();
+	justify-content: space-between;
+	flex-direction: column;
+	
 
+.top-text-section{
+	.center();
+	justify-content: space-around;
+	
+}//close top-text-section
+
+.top-right-side{
+	.center();
+	flex-direction: column;
+	align-items: center;
+	padding: 1%;
+}//closes top-right-side
+
+.lets-team-up-button{
+	.button-design();
+}//closes button section
+img{
+	max-width: 38.7%;
+}//closes img
+}//closes top-container
+
+.middle-container{
+	.center();
+
+.middle-left{
+	.column();
+	
+}//closes middle-left
+.middle-right{
+	.column();
+	
+}//closes middle-right
+}//closes middle-container
 
 .grid-container{
 	font-size: 1.6rem;
@@ -105,6 +162,12 @@ ul{
 	grid-template-columns: 100px 100px 100px 100px;
 	grid-gap: 10px;
 	
-}//closes grid-container	
+}//closes grid-container
+
+
+
+
+
 }
+
 

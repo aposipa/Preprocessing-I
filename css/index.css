@@ -158,6 +158,7 @@ body nav a {
 html h1,
 body h1 {
   font-size: 6.4rem;
+  text-align: center;
 }
 html h2,
 body h2 {
@@ -178,6 +179,56 @@ body p {
 html ul,
 body ul {
   font-size: 1.6rem;
+}
+html .top-container,
+body .top-container {
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+html .top-container .top-text-section,
+body .top-container .top-text-section {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+}
+html .top-container .top-right-side,
+body .top-container .top-right-side {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 1%;
+}
+html .top-container .lets-team-up-button,
+body .top-container .lets-team-up-button {
+  background-color: darkgrey;
+  color: white;
+  border-radius: 10px;
+  width: 200px;
+  padding: 2% 0 2% 0;
+}
+html .top-container img,
+body .top-container img {
+  max-width: 38.7%;
+}
+html .middle-container,
+body .middle-container {
+  display: flex;
+  justify-content: center;
+}
+html .middle-container .middle-left,
+body .middle-container .middle-left {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+html .middle-container .middle-right,
+body .middle-container .middle-right {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 html .grid-container,
 body .grid-container {
