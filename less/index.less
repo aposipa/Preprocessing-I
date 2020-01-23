@@ -19,7 +19,7 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 1px solid grey;
+	//border: 1px solid grey;
 	max-width: 100%;
 	font-size: 100%;
 	font: inherit;
@@ -67,6 +67,9 @@ justify-content: center;
 	align-items: center;
 	flex-direction: column;
 }
+.border(){
+	border:1px solid darkgrey;
+}
 .button-design(){
 background-color: darkgrey;
 color: white;
@@ -105,6 +108,7 @@ h2{
 }
 h3{
 	font-size: 3rem;
+	text-align: center;
 }
 h4{
 	font-size: 2rem;
@@ -114,12 +118,18 @@ p{
 }
 ul{
 	font-size:  @default-fontsize;
-}//closes font sizes.
+}
+li{
+	.border();
+}
+//closes font sizes.
 
 .top-container{
 	.center();
 	justify-content: space-between;
 	flex-direction: column;
+	background-color: @main-bg-color;
+	padding: 3%;
 	
 
 .top-text-section{
@@ -145,26 +155,37 @@ img{
 
 .middle-container{
 	.center();
+	.border();
 
 .middle-left{
 	.column();
+	//.border();
+	text-align: center;
 	
 }//closes middle-left
 .middle-right{
 	.column();
-	
+	//.border();
 }//closes middle-right
 }//closes middle-container
 
-.grid-container{
-	font-size: 1.6rem;
-	display: grid;
-	grid-template-columns: 100px 100px 100px 100px;
-	grid-gap: 10px;
-	
-}//closes grid-container
-
-
+.bottom-container{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+.work-section{
+	.center();
+	padding:1%;
+	border-top: 1px solid darkgrey;
+	background-color: @main-bg-color;
+}//closes work-section
+}//closes bottom-container
+footer{
+	background-color: darkgrey;
+	color:white;
+	padding: 3%;
+	text-align: center;
+}//closes footer
 
 
 
