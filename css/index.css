@@ -199,6 +199,14 @@ body .top-container .top-text-section {
   justify-content: center;
   justify-content: space-around;
 }
+@media (max-width: 500px) {
+  html .top-container .top-text-section,
+  body .top-container .top-text-section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+}
 html .top-container .top-right-side,
 body .top-container .top-right-side {
   display: flex;
@@ -224,6 +232,14 @@ body .middle-container {
   display: flex;
   justify-content: center;
   border: 1px solid darkgrey;
+}
+@media (max-width: 500px) {
+  html .middle-container,
+  body .middle-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
 }
 html .middle-container .middle-left,
 body .middle-container .middle-left {

@@ -135,7 +135,10 @@ li{
 .top-text-section{
 	.center();
 	justify-content: space-around;
-	
+	@media(max-width: 500px) {
+		.column();
+	}
+
 }//close top-text-section
 
 .top-right-side{
@@ -143,6 +146,7 @@ li{
 	flex-direction: column;
 	align-items: center;
 	padding: 1%;
+	
 }//closes top-right-side
 
 .lets-team-up-button{
@@ -156,6 +160,9 @@ img{
 .middle-container{
 	.center();
 	.border();
+	@media(max-width: 500px) {
+		.column();
+	}
 
 .middle-left{
 	.column();
@@ -189,6 +196,5 @@ footer{
 
 
 
+
 }
-
-
