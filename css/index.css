@@ -1,1 +1,277 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  font-size: 62.5%;
+}
+html .body-wrapper,
+body .body-wrapper {
+  max-width: 90%;
+}
+html nav,
+body nav {
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1%;
+}
+html nav a,
+body nav a {
+  text-decoration: none;
+}
+html h1,
+body h1 {
+  font-size: 6.4rem;
+  text-align: center;
+}
+html h2,
+body h2 {
+  font-size: 4.2rem;
+}
+html h3,
+body h3 {
+  font-size: 3rem;
+  text-align: center;
+}
+html h4,
+body h4 {
+  font-size: 2rem;
+}
+html p,
+body p {
+  font-size: 1.6rem;
+}
+html ul,
+body ul {
+  font-size: 1.6rem;
+}
+html li,
+body li {
+  border: 1px solid darkgrey;
+}
+html .top-container,
+body .top-container {
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  flex-direction: column;
+  background-color: lightgrey;
+  padding: 3%;
+}
+html .top-container .top-text-section,
+body .top-container .top-text-section {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+}
+@media (max-width: 500px) {
+  html .top-container .top-text-section,
+  body .top-container .top-text-section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+html .top-container .top-right-side,
+body .top-container .top-right-side {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 1%;
+}
+html .top-container .lets-team-up-button,
+body .top-container .lets-team-up-button {
+  background-color: darkgrey;
+  color: white;
+  border-radius: 10px;
+  width: 200px;
+  padding: 2% 0 2% 0;
+}
+html .top-container img,
+body .top-container img {
+  max-width: 38.7%;
+}
+html .middle-container,
+body .middle-container {
+  display: flex;
+  justify-content: center;
+  border: 1px solid darkgrey;
+}
+@media (max-width: 500px) {
+  html .middle-container,
+  body .middle-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+html .middle-container .middle-left,
+body .middle-container .middle-left {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+html .middle-container .middle-right,
+body .middle-container .middle-right {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+html .bottom-container,
+body .bottom-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+html .bottom-container .work-section,
+body .bottom-container .work-section {
+  display: flex;
+  justify-content: center;
+  padding: 1%;
+  border-top: 1px solid darkgrey;
+  background-color: lightgrey;
+}
+html footer,
+body footer {
+  background-color: darkgrey;
+  color: white;
+  padding: 3%;
+  text-align: center;
+}

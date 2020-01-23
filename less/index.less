@@ -19,7 +19,8 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 0;
+	//border: 1px solid grey;
+	max-width: 100%;
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -31,6 +32,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	
 }
 ol, ul {
 	list-style: none;
@@ -54,6 +56,145 @@ table {
 }
 
 html, body {
-    height: 100%;
-}
 
+//mix-ins	
+.center(){
+display: flex;
+justify-content: center;
+}
+.column(){
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+.border(){
+	border:1px solid darkgrey;
+}
+.button-design(){
+background-color: darkgrey;
+color: white;
+border-radius: 10px;
+width: 200px;
+padding: 2% 0 2% 0;
+
+}//close mix-ins
+.center();
+@main-bg-color:lightgrey;
+@default-fontsize:1.6rem;
+height: 100%;
+font-size:62.5%;
+
+.body-wrapper{
+	max-width: 90%;
+}
+nav{
+	font-size: @default-fontsize;
+	.center();
+	justify-content: space-around;
+	align-items: center;
+	padding:1%;
+	
+a{
+	text-decoration: none;
+}//closes a (links)
+}//closes nav 
+h1{
+	font-size: 6.4rem;
+	text-align: center;
+	
+}
+h2{
+	font-size: 4.2rem;
+}
+h3{
+	font-size: 3rem;
+	text-align: center;
+}
+h4{
+	font-size: 2rem;
+}
+p{
+	font-size:  @default-fontsize;
+}
+ul{
+	font-size:  @default-fontsize;
+}
+li{
+	.border();
+}
+//closes font sizes.
+
+.top-container{
+	.center();
+	justify-content: space-between;
+	flex-direction: column;
+	background-color: @main-bg-color;
+	padding: 3%;
+	
+
+.top-text-section{
+	.center();
+	justify-content: space-around;
+	@media(max-width: 500px) {
+		.column();
+	}
+
+}//close top-text-section
+
+.top-right-side{
+	.center();
+	flex-direction: column;
+	align-items: center;
+	padding: 1%;
+	
+}//closes top-right-side
+
+.lets-team-up-button{
+	.button-design();
+}//closes button section
+img{
+	max-width: 38.7%;
+}//closes img
+}//closes top-container
+
+.middle-container{
+	.center();
+	.border();
+	@media(max-width: 500px) {
+		.column();
+	}
+
+.middle-left{
+	.column();
+	//.border();
+	text-align: center;
+	
+}//closes middle-left
+.middle-right{
+	.column();
+	//.border();
+}//closes middle-right
+}//closes middle-container
+
+.bottom-container{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+.work-section{
+	.center();
+	padding:1%;
+	border-top: 1px solid darkgrey;
+	background-color: @main-bg-color;
+}//closes work-section
+}//closes bottom-container
+footer{
+	background-color: darkgrey;
+	color:white;
+	padding: 3%;
+	text-align: center;
+}//closes footer
+
+
+
+
+}
